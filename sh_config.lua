@@ -34,7 +34,7 @@ PLUGIN:AddNewNotify("joincharacter", function(clientSt, client)
 end)
 
 PLUGIN:AddNewNotify("spawn", function(client)
-    return Color(74, 114, 202), client, Color(255, 255, 255), " возрадился"
+    return Color(74, 114, 202), client, Color(255, 255, 255), " возродился"
 end)
 
 PLUGIN:AddNewNotify("connect", function(client)
