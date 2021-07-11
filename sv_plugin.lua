@@ -28,7 +28,7 @@ function PLUGIN:PlayerInitialSpawn(client)
 end
 
 function PLUGIN:OnCharacterDisconnect(client, character)
-    PLUGIN:SendNotify("disconnect", client:Name() .. " [" .. character:GetName() .. "] (" .. client:SteamID() .. ")")
+    PLUGIN:SendNotify("disconnect", client:SteamName() .. " [" .. character:GetName() .. "] (" .. client:SteamID() .. ")")
 end
 
 function PLUGIN:CharacterLoaded(character)
