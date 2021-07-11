@@ -16,8 +16,8 @@ local PLUGIN = PLUGIN
 local PANEL = {}
 
 function PANEL:Init()
-    self:SetPos(0, 0)
-    self:SetSize(ScrW(), ScrH())
+    self:SetPos(0, ScrH() * 0.2)
+    self:SetSize(ScrW(), ScrH() - ScrH() * 0.2)
 
     ix.adminnotify = self
     self.panels = self.panels or {}
