@@ -105,7 +105,7 @@ function PANEL:Paint(w, h)
     surface.DrawRect(0, 0, w, h)
 
     surface.SetDrawColor(ix.config.Get("color"))
-    surface.DrawRect(0, h-2, t * (w / 15), 2)
+    surface.DrawRect(0, h-2, t * (w / PLUGIN.guiTime), 2)
 
     draw.DrawText(self.text2 or "", "ixAdminNotifyFont", 4, 5, Color(0, 0, 0, 255), TEXT_ALIGN_LEFT)
     self.parsed:Draw(4, 4, TEXT_ALIGN_LEFT)
