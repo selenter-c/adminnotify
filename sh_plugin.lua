@@ -17,7 +17,7 @@ PLUGIN.name = "AdminNotify"
 PLUGIN.author = "AsterionTeam"
 PLUGIN.description = ""
 
-PLUGIN.notifyList = {}
+PLUGIN.notifyList = PLUGIN.notifyList or {}
 
 function PLUGIN:HasAccess(client)
     if !IsValid(client) then return end
