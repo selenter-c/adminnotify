@@ -39,6 +39,8 @@ netstream.Hook("ixAdminNotify", function(notify, ...)
 
     if #info > 0 then
         PLUGIN:CreateNotify(info)
+        MsgC(unpack(info))
+        Msg("\n")
     end
 end)
 
