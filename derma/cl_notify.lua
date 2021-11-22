@@ -91,6 +91,7 @@ local PANEL = {}
 function PANEL:Init()
     self:SetPos(0, 0)
     self:SetSize(0, 0)
+    self:SetDrawOnTop(true)
 
     self:SetAlpha(0)
     self:AlphaTo(255, 0.1)
