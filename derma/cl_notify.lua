@@ -57,6 +57,7 @@ function PANEL:AddNewNotify(data)
     panel.height = height + 8
     panel.id = #self.panels + 1
     panel.time = SysTime() + PLUGIN.guiTime
+    panel.parsed = markup.Parse(str or "")
 
     self.panels[panel.id] = panel
 
@@ -98,8 +99,6 @@ function PANEL:Init()
 end
 
 function PANEL:Paint(w, h)
-    self.parsed = markup.Parse(self.text or "")
-
     local t = (self.time or 0) - SysTime()
 
     surface.SetDrawColor(0, 0, 0, 175)
